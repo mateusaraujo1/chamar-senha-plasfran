@@ -24,7 +24,7 @@ body {
 
 .card-login {
     background: #F7F7F7;
-    width: 400px;
+    width: 370px;
     height: 400px;
     display: flex;
     align-items: center;
@@ -55,4 +55,34 @@ body {
 .card-login .input-group-text img {
     width: 1.5em;
     padding: 0;
+}
+
+/* card chamar-senha */
+
+.card-chamar-senha {
+    background: #F7F7F7;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-chamar-senha img {
+    width: 200px;
+}
+
+.card-chamar-senha button {
+    border: 1px solid white;
+}
+
+.card-chamar-senha .card-senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-chamar-senha .card-senha h1 {
+    font-size: 8em;
 }
