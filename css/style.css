@@ -3,23 +3,56 @@
     padding: 0;
 }
 
-/* cabeçalho */
-
-header {
-    border: 1px solid red;
-    width: 100%;
-    height: 100px;
+body {
+    height: 100vh;
+    background: #248745 url(../img/fundo.png);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #248745 url(../img/fundo.png);
-}
-
-header img {
-    width: 200px;
 }
 
 /* conteúdo principal */
 
+.container {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* card login */
 
+.card-login {
+    background: #F7F7F7;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.card-login img {
+    width: 200px;
+    padding-top: -50px;
+    padding-bottom: 30px;
+}
+
+.card-login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-login button {
+    margin-top: 15px;
+    background-color: #189E47;
+}
+
+.card-login button:hover {
+    background-color: #248745;
+}
+
+.card-login .input-group-text img {
+    width: 1.5em;
+    padding: 0;
+}
