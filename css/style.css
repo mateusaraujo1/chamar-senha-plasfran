@@ -64,7 +64,7 @@ body {
 
 /* página chamar-senha.html */
 
-.container2 {
+.container-chamar-senha {
     width: 100%;
     height: 100%;
     display: flex;
@@ -74,7 +74,7 @@ body {
 }
 
 
-header {
+.container-chamar-senha header {
     background: #F7F7F7;
     height: 70px;
     width: 100%;
@@ -86,25 +86,26 @@ header {
     padding: 0px 10px;
 }
 
-header img {
+.container-chamar-senha header img {
     width: 150px;
 }
 
-header button {
+.container-chamar-senha header button {
     width: 150px;
     font-weight: bolder;
 }
 
-header .titulo {
+.container-chamar-senha header .titulo {
     text-align: center;
+    color: #0c5332;
 }
 
-header .titulo h2 {
+.container-chamar-senha header .titulo h2 {
     margin: 0;
     padding: 0;
 }
 
-header .titulo span {
+.container-chamar-senha header .titulo span {
     margin: 0;
     padding: 0;
 }
@@ -126,6 +127,7 @@ header .titulo span {
 }
 
 .card-chamar-senha span {
+    color: #0c5332;
     padding: 0;
     margin: 0;
 }
@@ -135,8 +137,26 @@ header .titulo span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #0c5332;
 }
 
 .card-chamar-senha .card-senha h1 {
     font-size: 10em;
+}
+
+/* ---------------------------------------- */
+
+/* página monitor.html */
+
+.container-monitor {
+    width: 100%;
+    height: 100%;
+}
+
+.container-monitor header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
 }
