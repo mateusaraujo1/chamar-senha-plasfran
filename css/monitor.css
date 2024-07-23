@@ -25,15 +25,19 @@ main {
 }
 
 main .card-guiche {
-    border: 1px solid blue;
+    background: #F7F7F7;
+    border-radius: 10px;
     height: 80%;
     width: 80%;
-    margin: 50px 0px 0px 50px;
+    margin: 50px 10px 0px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 main .card-senha {
-    border: 1px solid blue;
+    background: #F7F7F7;
+    border-radius: 10px;
     height: 80%;
     width: 80%;
-    margin: 50px 50px 0px 0px;
+    margin: 50px 50px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
