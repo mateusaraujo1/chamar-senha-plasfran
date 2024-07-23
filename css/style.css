@@ -7,8 +7,10 @@ body {
     height: 100vh;
     background: #248745 url(../img/fundo.png);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
 }
 
 /* conteúdo principal */
@@ -30,6 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card-login img {
@@ -57,23 +60,45 @@ body {
     padding: 0;
 }
 
+
+/* página chamar-senha.html */
+
+
+header {
+    border: 1px solid red;
+    height: 80px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+
 /* card chamar-senha */
 
+/* usar espaçamento diferente do display flex, com espaço entre os itens */
 .card-chamar-senha {
     background: #F7F7F7;
     width: 600px;
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+/* tirar essa imagem e colocar no topo/header */
 .card-chamar-senha img {
     width: 200px;
 }
 
 .card-chamar-senha button {
     border: 1px solid white;
+}
+
+.card-chamar-senha span {
+    padding: 0;
+    margin: 0;
 }
 
 .card-chamar-senha .card-senha {
@@ -84,5 +109,5 @@ body {
 }
 
 .card-chamar-senha .card-senha h1 {
-    font-size: 8em;
+    font-size: 10em;
 }
