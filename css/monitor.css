@@ -26,40 +26,48 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 main .card-esquerda{
     border: 1px solid red;
-    height: 80%;
+    height: 90%;
     width: 80%;
-    margin: 50px 10px 0px 50px;
+    /* margin: 50px 10px 0px 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-main .card-esquerda-guiche {
-    border: 1px solid red;
+.card-esquerda-guiche, .card-esquerda-senha {
     background: #F7F7F7;
     border-radius: 10px;
-    height: 40%;
+    height: 45%;
     width: 95%;
-    margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main .card-esquerda-senha{
-    border: 1px solid red;
+/* .card-esquerda-senha {
     background: #F7F7F7;
     border-radius: 10px;
-    height: 40%;
+    height: 45%;
     width: 95%;
-    margin: 50px 10px 0px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 
 main .card-direita {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-direita-chamadas{
     background: #F7F7F7;
     border-radius: 10px;
-    height: 80%;
-    width: 80%;
-    margin: 50px 50px 0px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 95%;
+    width: 95%;
 }
