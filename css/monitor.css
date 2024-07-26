@@ -30,7 +30,7 @@ main {
 }
 
 main .card-esquerda{
-    border: 1px solid red;
+    color: #0c5332;
     height: 90%;
     width: 80%;
     /* margin: 50px 10px 0px 50px; */
@@ -46,6 +46,20 @@ main .card-esquerda{
     height: 45%;
     width: 95%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-esquerda-guiche h1, .card-esquerda-senha h1{
+    font-size: 12em;
+    margin-top: 5%;
+    padding: 0;
+}
+.card-esquerda-guiche h2, .card-esquerda-senha h2{
+    position: absolute;
+    font-size: 2.5em;
+    margin-top: 10px;
+    padding: 0;
 }
 
 /* .card-esquerda-senha {
@@ -57,6 +71,7 @@ main .card-esquerda{
 } */
 
 main .card-direita {
+    color: #0c5332;
     height: 90%;
     width: 80%;
     display: flex;
