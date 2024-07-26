@@ -79,10 +79,25 @@ main .card-direita {
     align-items: center;
 }
 
-.card-direita-chamadas{
+.card-direita-chamadas {
+    padding: 12px 10%;
     background: #F7F7F7;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 95%;
     width: 95%;
+}
+
+.card-direita-chamadas .fichas-chamadas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-direita-chamadas .fichas-chamadas p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-direita-chamadas h2 {
+    text-align: center;
 }
