@@ -46,20 +46,24 @@ main .card-esquerda{
     width: 95%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.card-esquerda-guiche h2, .card-esquerda-senha h2{
+    border-radius: 10px 10px 0 0;
+    background-color: #0c5332;
+    color: #F7F7F7;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px;
 }
 
 .card-esquerda-guiche h1, .card-esquerda-senha h1{
-    font-size: 12em;
-    margin-top: 5%;
+    text-align: center;
+    font-size: 10em;
     padding: 0;
-}
-.card-esquerda-guiche h2, .card-esquerda-senha h2{
-    position: absolute;
-    font-size: 2.5em;
-    margin-top: 10px;
-    padding: 0;
-    border: 1px solid red;
+    margin: 0;
 }
 
 /* CARD DIREITA */
@@ -84,7 +88,7 @@ main .card-direita {
 .card-direita-chamadas .fichas-chamadas {
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px 0;
+    padding: 22px 20px 0;
     border-top: 1px solid #0c5332;
 }
 
@@ -101,4 +105,3 @@ main .card-direita {
     color: #F7F7F7;
     margin: 0;
 }
-
