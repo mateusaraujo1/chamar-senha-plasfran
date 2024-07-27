@@ -21,7 +21,6 @@ header {
 }
 
 main {
-    border: 1px solid red;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -60,19 +59,14 @@ main .card-esquerda{
     font-size: 2.5em;
     margin-top: 10px;
     padding: 0;
+    border: 1px solid red;
 }
 
-/* .card-esquerda-senha {
-    background: #F7F7F7;
-    border-radius: 10px;
-    height: 45%;
-    width: 95%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} */
+/* CARD DIREITA */
 
 main .card-direita {
     color: #0c5332;
-    height: 90%;
+    height: auto;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -80,7 +74,6 @@ main .card-direita {
 }
 
 .card-direita-chamadas {
-    padding: 12px 10%;
     background: #F7F7F7;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -91,6 +84,8 @@ main .card-direita {
 .card-direita-chamadas .fichas-chamadas {
     display: flex;
     justify-content: space-between;
+    padding: 15px 20px 0;
+    border-top: 1px solid #0c5332;
 }
 
 .card-direita-chamadas .fichas-chamadas p {
@@ -99,5 +94,11 @@ main .card-direita {
 }
 
 .card-direita-chamadas h2 {
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
     text-align: center;
+    background-color: #0c5332;
+    color: #F7F7F7;
+    margin: 0;
 }
+
