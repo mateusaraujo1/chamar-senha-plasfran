@@ -30,9 +30,17 @@ function chamar() {
     }
     else 
     {
-        const dataAtual = new Date();
+        
         var chamada = document.getElementById('ultima-chamada');
 
-        chamada.innerHTML = 'Última senha chamada: ' + atual + ' às ' + dataAtual.getHours()+':'+dataAtual.getMinutes();
+        const data = new Date(); // Cria um novo objeto Date com a data e hora atuais
+        const horas = data.getHours(); // Obtém a hora atual
+        const minutos = data.getMinutes(); // Obtém os minutos atuais
+        
+        // Formata a hora e os minutos para garantir que sejam sempre de dois dígitos
+        const horasFormatadas = (horas < 10 ? '0' : '') + horas;
+        const minutosFormatados = (minutos < 10 ? '0' : '') + minutos;
+
+        chamada.innerHTML = 'Última senha chamada: ' + atual + ' às ' + horasFormatadas+':'+minutosFormatados;
     }
 }
