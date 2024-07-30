@@ -1,0 +1,39 @@
+/* CARD ESQUERDA */
+
+main .card-esquerda{
+    color: #0c5332;
+    height: 90%;
+    width: 80%;
+    /* margin: 50px 10px 0px 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-esquerda-guiche, .card-esquerda-senha {
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 45%;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-esquerda-guiche h2, .card-esquerda-senha h2{
+    border-radius: 10px 10px 0 0;
+    background-color: #0c5332;
+    color: #F7F7F7;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px;
+}
+
+.card-esquerda-guiche h1, .card-esquerda-senha h1{
+    text-align: center;
+    font-size: 10em;
+    padding: 0;
+    margin: 0;
+}

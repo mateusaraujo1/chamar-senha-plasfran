@@ -6,8 +6,8 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: #248745 url(../img/fundo.png);
-}
+  background: #248745 url(../../img/fundo.png);
+} 
 
 #logo {
   width: 300px;

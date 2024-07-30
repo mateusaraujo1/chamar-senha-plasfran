@@ -1,0 +1,39 @@
+/* CARD DIREITA */
+
+main .card-direita {
+    color: #0c5332;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-direita-chamadas {
+    background: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 95%;
+    width: 95%;
+}
+
+.card-direita-chamadas .fichas-chamadas {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 0;
+    border-top: 1px solid #0c5332;
+}
+
+.card-direita-chamadas .fichas-chamadas p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-direita-chamadas h2 {
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: #0c5332;
+    color: #F7F7F7;
+    margin: 0;
+}
