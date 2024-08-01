@@ -25,6 +25,7 @@
 .card-login button {
     margin-top: 15px;
     background-color: #189E47;
+    border: none;
 }
 
 .card-login button:hover {
