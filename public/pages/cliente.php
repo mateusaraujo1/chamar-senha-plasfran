@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-  require_once "../../controller/validadorController.php";
+require_once "../../controller/validadorController.php";
 
 ?>
 
@@ -8,55 +8,63 @@
 
 <html lang="pt-br">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Clínica Plasfran</title>
+  <title>Clínica Plasfran</title>
 
-    <link rel="stylesheet" href="../css/cliente/cliente.css" />
+  <link rel="stylesheet" href="../css/cliente/cliente.css" />
+  <link rel="stylesheet" href="../css/cliente/header.css" />
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div id="main-container">
+  <a id="sair" href="../../controller/logoffController.php">
 
-      <img id="logo" src="../img/logo.png" alt="logo-plasfran" />
+    <button type="button" class="btn btn-danger">SAIR</button>
 
-      <div class="guiche" onclick="showDetails(1)">
-        Guichê 1: CAIXA PREFERENCIAL
-      </div>
+  </a>
 
-      <div class="guiche" onclick="showDetails(2)">
-        Guichê 2: ATUALIZAÇÃO CADASTRAL
-      </div>
 
-      <div class="guiche" onclick="showDetails(3)">
-        Guichê 3: CAIXA
-      </div>
+  <div id="main-container">
 
-      <div class="guiche" onclick="showDetails(4)">
-        Guichê 4: ATENDIMENTO LABORATORIAL
-      </div>
+    <img id="logo" src="../img/logo.png" alt="logo-plasfran" />
 
-      <div class="guiche" onclick="showDetails(5)">
-        Guichê 5: ATENDIMENTO AO CLIENTE
-      </div>
-
+    <div class="guiche" onclick="showDetails(1)">
+      Guichê 1: CAIXA PREFERENCIAL
     </div>
 
-    <div id="details-container" style="display: none">
-
-      <button onclick="goBack()">Voltar</button>
-      <div id="services"></div>
-      <button onclick="printTicket(), goBack()">Imprimir Senha</button>
-      
+    <div class="guiche" onclick="showDetails(2)">
+      Guichê 2: ATUALIZAÇÃO CADASTRAL
     </div>
 
-    <script src="../scripts/cliente.js"></script>
+    <div class="guiche" onclick="showDetails(3)">
+      Guichê 3: CAIXA
+    </div>
 
-  </body>
+    <div class="guiche" onclick="showDetails(4)">
+      Guichê 4: ATENDIMENTO LABORATORIAL
+    </div>
+
+    <div class="guiche" onclick="showDetails(5)">
+      Guichê 5: ATENDIMENTO AO CLIENTE
+    </div>
+
+  </div>
+
+  <div id="details-container" style="display: none">
+
+    <button onclick="goBack()">Voltar</button>
+    <div id="services"></div>
+    <button onclick="printTicket(), goBack()">Imprimir Senha</button>
+
+  </div>
+
+  <script src="../scripts/cliente.js"></script>
+
+</body>
 
 </html>
