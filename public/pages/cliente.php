@@ -22,16 +22,20 @@ require_once "../../controller/validadorController.php";
 
 <body>
 
-  <a id="sair" href="../../controller/logoffController.php">
+  <header>
 
-    <button type="button" class="btn btn-danger">SAIR</button>
+    <img id="logo" src="../img/logo.png" alt="logo-plasfran" />
 
-  </a>
+    <a id="sair" href="../../controller/logoffController.php">
+
+      <button type="button" class="btn btn-danger">SAIR</button>
+
+    </a>
+
+  </header>
 
 
   <div id="main-container">
-
-    <img id="logo" src="../img/logo.png" alt="logo-plasfran" />
 
     <div class="guiche" onclick="showDetails(1)">
       Guichê 1: CAIXA PREFERENCIAL

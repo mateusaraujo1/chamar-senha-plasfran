@@ -1,0 +1,25 @@
+header {
+    background: #F7F7F7;
+    height: 70px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto 0;
+    margin-bottom: 50px;
+}
+
+header img {
+    width: 150px;
+    padding-left: 10px;
+}
+
+header a button {
+    margin: auto 0;
+}
+
+header a {
+    margin-right: 10px;
+}
