@@ -22,7 +22,7 @@
 
             <img src="img/logo.png" alt="Logo Plasfran">
 
-            <form>
+            <form action="../controller/loginController.php" method="post">
 
                 <div class="form-group">
                     <label class="sr-only" for="inlineFormInputGroup">Usuário</label>
