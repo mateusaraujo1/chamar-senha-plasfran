@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-  require_once "../../controller/validadorController.php";
+require_once "../../controller/validadorController.php";
 
 ?>
 
@@ -28,7 +28,9 @@
     <div class="container-monitor">
 
         <header>
-            <button class="btn btn-danger">SAIR</button>
+            <a id="sair" href="../../controller/logoffController.php">
+                <button type="button" class="btn btn-danger m-0 pt-2 pb-2 pl-4 pr-4">SAIR</button>
+            </a>
         </header>
         <!-- criar botão pra ficar com a tela cheia... ações do botão: ir pro final da página, ocultar barra vertical,
          mostrar pop-up discreto "aperte f11 para sair da tela cheia" -->
@@ -94,8 +96,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
 </body>
