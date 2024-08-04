@@ -37,9 +37,10 @@
 
             <img src="../img/logo.png" alt="logo">
 
-            <a href="../../controller/logoffController.php"><button type="button" class="btn btn-danger">SAIR</button></a>
-
-            <!-- *sair* da conta, canto direito-->
+            
+            <a id="sair" href="../../controller/logoffController.php">
+                <button type="button" class="btn btn-danger m-0 pt-2 pb-2 pl-4 pr-4">SAIR</button>
+            </a>
              
         </header>
 
