@@ -35,7 +35,7 @@
                 <span>senhas: 13</span>
             </div>
 
-            <img src="../img/logo.png" alt="logo">
+            <img src="../img/logo.png" alt="logo" style="margin-left: -90px;">
 
             
             <a id="sair" href="../../controller/logoffController.php">

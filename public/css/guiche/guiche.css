@@ -29,6 +29,12 @@ header img {
     width: 150px;
 }
 
+header a {
+    /* width: 150px; */
+    font-weight: bolder;
+    margin-right: 90px;
+}
+
 
 header .titulo {
     text-align: center;
