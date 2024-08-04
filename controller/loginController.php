@@ -23,9 +23,6 @@ if (isset($login->id)) {
     $_SESSION['id'] = $login->id;
     $_SESSION['type'] = $login->type;
 
-    // dar um session_start aqui... ou só dentro da página principal? qual o escope dela?
-
-
     switch ($login->type) {
         case 2:
             header('location: ../public/pages/cliente.php');
