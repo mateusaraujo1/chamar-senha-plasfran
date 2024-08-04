@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require '../services/connection.php';
 require '../services/loginService.php';
@@ -14,13 +14,35 @@ $loginService = new LoginService($connection, $login);
 
 $login = $loginService->entrar();
 
+
+// verifica se o login efetuado retornou resultado válido do banco de dados
 if (isset($login->id)) {
-    echo 'tem algo';
+    session_start();
+
+    $_SESSION['autenticado'] = 1;
+    $_SESSION['id'] = $login->id;
+    $_SESSION['type'] = $login->type;
 
     // dar um session_start aqui... ou só dentro da página principal? qual o escope dela?
 
-    // criar o redirecionamento (switch por 'id') para respectiva página
 
+    switch ($login->type) {
+        case 2:
+            header('location: ../public/pages/cliente.php');
+            break;
+
+        case 3:
+            header('location: ../public/pages/guiche.php');
+            break;
+
+        case 4:
+            header('location: ../public/pages/monitor.php');
+            break;
+
+        default:
+            header('location: ../public/index.php');
+            break;
+    }
 } else {
     header('location: ../public/index.php?login=erro');
 }
