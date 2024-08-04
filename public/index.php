@@ -30,7 +30,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><img src="img/contato.png" alt=""></div>
                         </div>
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuário" required>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuário" name="user" required>
                     </div>
                 </div>
 
@@ -42,11 +42,19 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><img src="img/cadeado.png" alt=""></div>
                         </div>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="password" required>
                     </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Entrar</button>
+
+                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro'){ ?>
+
+                            <div class="text-danger d-flex justify-content-center">
+                                Usuário ou senha inválidos
+                            </div>
+
+                <?php } ?>
 
             </form>
 

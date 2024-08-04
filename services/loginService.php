@@ -34,8 +34,9 @@ class LoginService {
 
         $stmt->execute();
 
-        echo '<pre>';
-        print_r($stmt->fetchAll(PDO::FETCH_OBJ));
+        $login = $stmt->fetch(PDO::FETCH_OBJ);
+
+        return $login;
     }
 }
 
