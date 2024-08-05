@@ -6,6 +6,6 @@
     !$_SESSION['autenticado'])
     header("Location: index.php?login=erro");
 
-  // ($login->type != $_SESSION['type']
+  // ($login->__get('type') != $_SESSION['type']
 
 ?>
