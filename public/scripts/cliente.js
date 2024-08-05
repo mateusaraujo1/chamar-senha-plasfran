@@ -1,4 +1,4 @@
-let counters = [1, 1, 1, 1, 1]; // Contadores de senhas para cada guichê
+ // Contadores de senhas para cada guichê
 
 function showDetails(guiche) {
     const services = [
@@ -55,7 +55,7 @@ function goBack() {
     document.getElementById('main-container').style.display = 'block';
 }
 
-function printTicket() {
+function printTicket(counters) {
     const guiche = document.getElementById('services').getAttribute('data-guiche');
     const ticketNumber = counters[guiche - 1]++;
     const ticket = `SENHA: ${ticketNumber}\nGUICHÊ: ${guiche}`;

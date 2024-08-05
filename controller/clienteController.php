@@ -9,6 +9,6 @@ $connection = new Connection();
 
 $clienteService = new ClienteService($connection, $ficha);
 
-$clienteService->testar();
+
 
 ?>
