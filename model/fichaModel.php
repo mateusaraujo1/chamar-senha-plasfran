@@ -22,6 +22,8 @@
             $this->$atributo = $value;
         }
 
+        // usa valor do guichê e da senha para setar tudo
+        // id é a concatenação de guichê e senha
         public function setAll($guiche, $senha) 
         {
             $this->senha = $senha;

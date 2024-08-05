@@ -22,7 +22,7 @@ require "../../controller/clienteController.php";
 
   <script>
 
-    let counters = [<?php $ficha->__get('') ?>, 1, 1, 1, 1];
+    
 
   </script>
 
@@ -71,7 +71,7 @@ require "../../controller/clienteController.php";
 
     <button onclick="goBack()">Voltar</button>
     <div id="services"></div>
-    <button onclick="printTicket(counters), goBack()">Imprimir Senha</button>
+    <button onclick="printTicket(), goBack()">Imprimir Senha</button>
 
   </div>
 

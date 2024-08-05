@@ -7,10 +7,12 @@ require '../../model/fichaModel.php';
 $ficha = new Ficha();
 $connection = new Connection();
 
-$ficha->setAll(3, 4);
-
 $clienteService = new ClienteService($connection, $ficha);
 
-print_r($ficha);
+$guiche = $clienteService->senhaAtual(1);
+
+
+
+print_r($guiche);
 
 ?>
