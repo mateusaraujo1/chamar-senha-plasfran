@@ -16,7 +16,7 @@ $login = $loginService->entrar();
 
 
 // verifica se o login efetuado retornou resultado válido do banco de dados
-if (isset($login->id)) {
+if (isset($login->id) AND $_SESSION['autenticado'] != 1) {
     session_start();
 
     $_SESSION['autenticado'] = 1;
@@ -41,7 +41,7 @@ if (isset($login->id)) {
             break;
     }
 } else {
-    header('location: ../public/index.php?login=erro');
+    header('location: ../public/pages/index.php?login=erro');
 }
 
 ?>

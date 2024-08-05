@@ -56,6 +56,8 @@ require_once "../../controller/validadorController.php";
 
                     <h2>Senhas sendo atendidas</h2>
 
+                    <!-- space-around, ou space-between -->
+
                     <div class="fichas-chamadas">
                         <p>GUICHÊ: 01, SENHA: 03</p>
                         <p>às 08:56</p>

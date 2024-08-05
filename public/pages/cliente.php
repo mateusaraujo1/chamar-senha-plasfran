@@ -2,6 +2,7 @@
 
 require_once "../../controller/validadorController.php";
 
+
 ?>
 
 <!DOCTYPE html>

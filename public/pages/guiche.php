@@ -1,6 +1,7 @@
 <?php 
 
-    require_once "../../controller/validadorController.php";
+
+    require "../../controller/validadorController.php";
 
 ?>
 
