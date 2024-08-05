@@ -13,4 +13,6 @@ $guiche->__set('id', $_SESSION['id'] - 2);
 
 $guicheService = new GuicheService($connection, $guiche);
 
+$guiche = $guicheService->getGuiche();
+
 ?>

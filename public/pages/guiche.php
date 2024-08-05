@@ -33,8 +33,8 @@
         <header>
             
             <div class="titulo">
-                <h2>GUICHÊ 4</h2>
-                <span>senhas: 13</span>
+                <h2>GUICHÊ <?= $guiche->id ?></h2>
+                <span>senhas: <?= $guiche->total_senhas ?></span>
             </div>
 
             <img src="../img/logo.png" alt="logo" style="margin-left: -90px;">
