@@ -29,6 +29,21 @@ require "../../controller/clienteController.php";
     <?= $clienteService->senhaAtual(4) ?>,
     <?= $clienteService->senhaAtual(5) ?>];
 
+
+    function atualizar(guiche) {
+      var valor = guiche;
+
+      fetch('clienteController.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'campoOculto=' + encodeURIComponent(valor)
+      })
+      .then(response => response.text())
+      .then(data => console.log(data));
+    }
+
     
 
   </script>

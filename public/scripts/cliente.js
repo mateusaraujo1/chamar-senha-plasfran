@@ -58,7 +58,8 @@ function goBack() {
 
 function printTicket() {
     const guiche = document.getElementById('services').getAttribute('data-guiche');
-    const ticketNumber = counters[guiche - 1]++;
+    const ticketNumber = ++counters[guiche - 1];
+    atualizar(guiche);
     const ticket = `SENHA: ${ticketNumber}\nGUICHÊ: ${guiche}`;
     
     const printWindow = window.open('', '', 'width=300,height=200');
