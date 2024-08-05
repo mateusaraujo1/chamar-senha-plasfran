@@ -22,6 +22,13 @@ require "../../controller/clienteController.php";
 
   <script>
 
+    let counters = [
+    <?= $clienteService->senhaAtual(1) ?>,
+    <?= $clienteService->senhaAtual(2) ?>,
+    <?= $clienteService->senhaAtual(3) ?>,
+    <?= $clienteService->senhaAtual(4) ?>,
+    <?= $clienteService->senhaAtual(5) ?>];
+
     
 
   </script>
@@ -75,7 +82,9 @@ require "../../controller/clienteController.php";
 
   </div>
 
-  <script src="../scripts/cliente.js"></script>
+  <script src="../scripts/cliente.js">
+
+  </script>
 
 </body>
 

@@ -38,9 +38,9 @@ class ClienteService
 
         $guiche = $stmt->fetch(PDO::FETCH_OBJ);
 
-        $guiche = $guiche->total_senhas;
+        $total_senhas = $guiche->total_senhas;
 
-        return $guiche;
+        return $total_senhas;
     }
 
 

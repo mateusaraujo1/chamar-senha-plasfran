@@ -1,4 +1,4 @@
-let counters = [1, 1, 1, 1, 1];
+
 // Contadores de senhas para cada guichê
 
 function showDetails(guiche) {
