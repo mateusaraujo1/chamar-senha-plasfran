@@ -38,7 +38,7 @@ require "../../controller/clienteController.php";
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: 'campoOculto=' + encodeURIComponent(valor)
+        body: 'guicheId=' + encodeURIComponent(valor)
       })
       .then(response => response.text())
       .then(data => console.log(data));

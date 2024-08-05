@@ -9,9 +9,9 @@ $connection = new Connection();
 
 $clienteService = new ClienteService($connection, $ficha);
 
-if (isset($_POST['campoOculto'])) 
+if (isset($_POST['guicheId'])) 
 {
-    $guiche = $_POST['campoOculto'];
+    $guiche = $_POST['guicheId'];
     $clienteService->imprimirSenha($guiche);
 }
 
