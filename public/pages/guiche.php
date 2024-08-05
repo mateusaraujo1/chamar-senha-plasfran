@@ -1,8 +1,8 @@
 <?php 
 
 
-    require "../../controller/guicheController.php";
     require "../../controller/validadorController.php";
+    require "../../controller/guicheController.php";
 
 ?>
 

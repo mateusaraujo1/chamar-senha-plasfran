@@ -11,7 +11,8 @@ class GuicheService
         $this->guiche = $guiche;
     }
 
-    public function testar() {
+    public function testar()
+    {
         $query = 'select * from guiches';
 
         $stmt = $this->connection->prepare($query);
@@ -20,5 +21,24 @@ class GuicheService
         echo '<pre>';
         print_r($stmt->fetchAll(PDO::FETCH_OBJ));
         echo '</pre>';
+    }
+
+    public function getGuiche()
+    {
+        $query = 'select 
+                    * 
+                from 
+                    guiches
+                where
+                    id = :id';
+
+        $stmt = $this->connection->prepare($query);
+        $stmt->bindValue(':id', $this->guiche->__get('id'));
+
+        $stmt->execute();
+
+        $guiche = $stmt->fetch(PDO::FETCH_OBJ);
+
+        return $guiche;
     }
 }
