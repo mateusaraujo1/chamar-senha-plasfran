@@ -9,10 +9,4 @@ $connection = new Connection();
 
 $clienteService = new ClienteService($connection, $ficha);
 
-$guiche = $clienteService->senhaAtual(1);
-
-
-
-print_r($guiche);
-
 ?>

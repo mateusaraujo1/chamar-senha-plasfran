@@ -43,7 +43,37 @@ class ClienteService
         return $guiche;
     }
 
+
+    // ao clicar pra imprimir senha no front-end, soma-se total_senhas + 1
     public function imprimirSenha($guiche)
     {
+        $query = 'select 
+                    total_senhas
+                from 
+                    guiches
+                where 
+                    id = :guiche';
+
+        $stmt = $this->connection->prepare($query);
+        $stmt->bindValue(':guiche', $guiche);
+
+        $stmt->execute();
+
+        $guicheOBJ = $stmt->fetch(PDO::FETCH_OBJ);
+
+        $total_senhas = $guicheOBJ->total_senhas;
+
+        $query = 'update
+                    guiches
+                set
+                    total_senhas = :total_senhas
+                where 
+                    id = :guiche';
+
+        $stmt = $this->connection->prepare($query);
+        $stmt->bindValue(':total_senhas', $total_senhas+1);
+        $stmt->bindValue(':guiche', $guiche);
+
+        $stmt->execute();
     }
 }
