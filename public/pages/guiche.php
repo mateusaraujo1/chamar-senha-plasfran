@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 
-    require "../../controller/validadorController.php";
-    require "../../controller/guicheController.php";
+require_once "../../controller/validadorController.php";
+require "../../controller/guicheController.php";
 
 ?>
 
@@ -22,6 +22,41 @@
 
     <title>Contatos</title>
 
+    <script>
+
+        function atualizar(senhaAtual) {
+            var valor = senhaAtual;
+
+            fetch('guicheController.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'senhaAtual=' + encodeURIComponent(valor)
+                })
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+
+        function chamar() {
+
+            if (atual == 0) {
+                return 0;
+            } else {
+                var chamada = document.getElementById('ultima-chamada');
+
+                atualizar(atual);
+
+                const data = new Date();
+                const horas = data.getHours();
+                const minutos = data.getMinutes();
+
+                chamada.innerHTML = 'Última senha chamada: ' +
+                    <?= $guiche->senha_atual ?>;
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -31,19 +66,19 @@
     <div class="container-chamar-senha">
 
         <header>
-            
+
             <div class="titulo">
                 <h2>GUICHÊ <?= $guiche->id ?></h2>
                 <span>senhas: <?= $guiche->total_senhas ?></span>
             </div>
 
             <img src="../img/logo.png" alt="logo" style="margin-left: -90px;">
-                
+
 
             <a id="sair" href="../../controller/logoffController.php">
                 <button type="button" class="btn btn-danger m-0 pt-2 pb-2 pl-4 pr-4">SAIR</button>
             </a>
-             
+
         </header>
 
         <div class="container">
@@ -51,7 +86,7 @@
                 <!-- <img src="../img/logo.png" alt="Logo Plasfran"> -->
                 <div class="card-senha">
                     <h2>SENHA</h2>
-                    <h1 id="senha">0</h1>
+                    <h1 id="senha"><?= $guiche->senha_atual ?></h1>
                 </div>
                 <div class="btn-group" role="group">
                     <button id="anterior" type="button" class="btn btn-success btn-lg" onclick="numAnterior()">anterior</button>
@@ -63,9 +98,8 @@
         </div>
     </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
     <script src="../scripts/guiche.js"></script>

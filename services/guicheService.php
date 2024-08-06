@@ -41,4 +41,19 @@ class GuicheService
 
         return $guiche;
     }
+
+    public function setSenhaAtual($guiche) {
+        $query = 'update
+                    guiches
+                set
+                    senha_atual = :senha_atual
+                where 
+                    id = :guiche';
+
+        $stmt = $this->connection->prepare($query);
+        $stmt->bindValue(':senha_atual', $guiche->senha_atual);
+        $stmt->bindValue(':guiche', $guiche->id);
+
+        $stmt->execute();
+    }
 }
