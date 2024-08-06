@@ -11,6 +11,11 @@ class GuicheService
         $this->guiche = $guiche;
     }
 
+    public function __get($atributo)
+    {
+        return $this->$atributo;
+    }
+
     public function testar()
     {
         $query = 'select * from guiches';
@@ -37,12 +42,16 @@ class GuicheService
 
         $stmt->execute();
 
-        $guiche = $stmt->fetch(PDO::FETCH_OBJ);
+        $this->guiche->instanciar($stmt->fetch(PDO::FETCH_OBJ));
 
-        return $guiche;
+        return $this->guiche;
+
     }
 
-    public function setSenhaAtual($id, $senha_atual) {
+    public function setSenhaAtual($id, $senha_atual) 
+    {
+        $this->guiche->__set('senha_atual', $senha_atual);
+
         $query = 'update
                     guiches
                 set

@@ -16,7 +16,9 @@ if (isset($_SESSION['id'])) {
 
 $guicheService = new GuicheService($connection, $guiche);
 
-$guiche = $guicheService->getGuiche();
+
+$guicheService->getGuiche();
+
 
 if (isset($_POST['senhaAtual'])) 
 {
