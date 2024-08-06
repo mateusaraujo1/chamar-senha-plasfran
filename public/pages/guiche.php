@@ -25,14 +25,16 @@ require "../../controller/guicheController.php";
     <script>
 
         function atualizar(senhaAtual) {
-            var valor = senhaAtual;
+            var dados = new URLSearchParams();
+            dados.append('senhaAtual', senhaAtual);
+            dados.append('id', <?= $guiche->id ?>);
 
             fetch('guicheController.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
                     },
-                    body: 'senhaAtual=' + encodeURIComponent(valor)
+                    body: dados.toString()
                 })
                 .then(response => response.text())
                 .then(data => console.log(data));

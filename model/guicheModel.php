@@ -16,15 +16,15 @@
             $this->$atributo = $value;
         }
 
-        public function instanciar($OBJ) 
-        {
-            $this->id = $OBJ->id;
-            $this->senha_atual = $OBJ->senha_atual;
-            $this->total_senhas = $OBJ->total_senhas;
-            $this->id_usuario_guiche_FK = $OBJ->id_usuario_guiche_FK;
+        // public function instanciar($OBJ) 
+        // {
+        //     $this->id = $OBJ->id;
+        //     $this->senha_atual = $OBJ->senha_atual;
+        //     $this->total_senhas = $OBJ->total_senhas;
+        //     $this->id_usuario_guiche_FK = $OBJ->id_usuario_guiche_FK;
         
-        return $this;
-        }
+        // return $this;
+        // }
     }
 
 ?>

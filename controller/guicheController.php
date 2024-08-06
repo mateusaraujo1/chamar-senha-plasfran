@@ -16,18 +16,13 @@ if (isset($_SESSION['id'])) {
 
 $guicheService = new GuicheService($connection, $guiche);
 
-$OBJ = $guicheService->getGuiche();
+$guiche = $guicheService->getGuiche();
 
-$guiche = $guiche->instanciar($OBJ);
-echo '<pre>';
-print_r($guiche);
-echo $guiche->id;
-echo '</pre>';
+// tentar colocar em outro arquivo
 
 if (isset($_POST['senhaAtual'])) 
 {
-    $guiche->__set('senha_atual', $_POST['senhaAtual']);
-    $guicheService->setSenhaAtual($guiche);
+    $guicheService->setSenhaAtual((int)$_POST['id'], (int)$_POST['senhaAtual']);
 }
 
 ?>

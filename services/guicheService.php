@@ -33,7 +33,7 @@ class GuicheService
                     id = :id';
 
         $stmt = $this->connection->prepare($query);
-        $stmt->bindValue(':id', $this->guiche->__get('id'));
+        $stmt->bindValue(':id', $this->guiche->id);
 
         $stmt->execute();
 
@@ -42,17 +42,17 @@ class GuicheService
         return $guiche;
     }
 
-    public function setSenhaAtual($guiche) {
+    public function setSenhaAtual($id, $senha_atual) {
         $query = 'update
                     guiches
                 set
                     senha_atual = :senha_atual
                 where 
-                    id = :guiche';
+                    id = :guicheId';
 
         $stmt = $this->connection->prepare($query);
-        $stmt->bindValue(':senha_atual', $guiche->senha_atual);
-        $stmt->bindValue(':guiche', $guiche->id);
+        $stmt->bindValue(':senha_atual', $senha_atual);
+        $stmt->bindValue(':guicheId', $id);
 
         $stmt->execute();
     }
