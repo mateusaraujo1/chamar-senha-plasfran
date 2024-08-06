@@ -3,9 +3,9 @@
 class Connection 
 {
     private $host = 'localhost';
-    private $dbname = 'sistema_fichas';
-    private $user = 'root';
-    private $pass = '';
+    private $dbname = 'matara997_plasfran_admin';
+    private $user = 'matara997_plasfran_admin';
+    private $pass = '@Plasfran14';
 
     public function connect()
     {

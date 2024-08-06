@@ -41,7 +41,7 @@ if (isset($login->id) AND $_SESSION['autenticado'] != 1) {
             break;
     }
 } else {
-    header('location: ../public/pages/index.php?login=erro');
+    header('location: ../index.php?login=erro');
 }
 
 ?>

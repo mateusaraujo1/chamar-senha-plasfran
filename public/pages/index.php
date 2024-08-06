@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/index/index.css">
-    <link rel="stylesheet" href="../css/index/card-login.css">
+    <link href="public/css/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/index/index.css">
+    <link rel="stylesheet" href="public/css/index/card-login.css">
 
     <title>Clínica Plasfran</title>
 
@@ -20,15 +20,15 @@
     <div class="container">
         <div class="card-login card">
 
-            <img src="../img/logo.png" alt="Logo Plasfran">
+            <img src="public/img/logo.png" alt="Logo Plasfran">
 
-            <form action="../../controller/loginController.php" method="post">
+            <form action="controller/loginController.php" method="post">
 
                 <div class="form-group">
                     <label class="sr-only" for="inlineFormInputGroup">Usuário</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><img src="../img/contato.png" alt=""></div>
+                            <div class="input-group-text"><img src="public/img/contato.png" alt=""></div>
                         </div>
                         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuário" name="user" required>
                     </div>
@@ -40,7 +40,7 @@
                     <label for="exampleInputPassword1">Senha</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><img src="../img/cadeado.png" alt=""></div>
+                            <div class="input-group-text"><img src="public/img/cadeado.png" alt=""></div>
                         </div>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="password" required>
                     </div>
