@@ -49,12 +49,15 @@ require "../../controller/guicheController.php";
 
                 atualizar(atual);
 
-                const data = new Date();
-                const horas = data.getHours();
-                const minutos = data.getMinutes();
+                const data = new Date(); // Cria um novo objeto Date com a data e hora atuais
+                const horas = data.getHours(); // Obtém a hora atual
+                const minutos = data.getMinutes(); // Obtém os minutos atuais
 
-                chamada.innerHTML = 'Última senha chamada: ' +
-                    <?= $guiche->senha_atual ?>;
+                // Formata a hora e os minutos para garantir que sejam sempre de dois dígitos
+                const horasFormatadas = (horas < 10 ? '0' : '') + horas;
+                const minutosFormatados = (minutos < 10 ? '0' : '') + minutos;
+
+                chamada.innerHTML = 'Última senha chamada: ' + atual + ' às ' + horasFormatadas+':'+minutosFormatados;
             }
         }
     </script>
@@ -95,7 +98,7 @@ require "../../controller/guicheController.php";
                     <button id="chamar" type="button" class="btn btn-danger btn-lg" onclick="chamar()">chamar</button>
                     <button id="proximo" type="button" class="btn btn-success btn-lg" onclick="numProximo()">próximo</button>
                 </div>
-                <span id="ultima-chamada"></span>
+                <span id="ultima-chamada">Última senha chamada: <?= $guiche->senha_atual ?></span>
             </div>
         </div>
     </div>

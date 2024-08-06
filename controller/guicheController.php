@@ -18,8 +18,6 @@ $guicheService = new GuicheService($connection, $guiche);
 
 $guiche = $guicheService->getGuiche();
 
-// tentar colocar em outro arquivo
-
 if (isset($_POST['senhaAtual'])) 
 {
     $guicheService->setSenhaAtual((int)$_POST['id'], (int)$_POST['senhaAtual']);
