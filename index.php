@@ -1,5 +1,3 @@
-<?php 
+<?php
 
-    require 'public/pages/index.php';
-
-?>
+require 'public/pages/index.php';
